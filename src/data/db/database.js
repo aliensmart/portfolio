@@ -16,9 +16,11 @@ const database = {
       hackerranck: 'https://www.hackerrank.com/kaoua121',
       linkedin: 'https://www.linkedin.com/in/abdoul-ouakil-kanazoe-9b7037144/',
       leetcode: 'https://leetcode.com/aliensmart/',
-      github: 'https://github.com/aliensmart'
+      github: 'https://github.com/aliensmart',
+      instagram:"https://www.instagram.com/letslearncodes/",
+      youtube: "https://www.youtube.com/channel/UCx4LVXKa_wh_JOfIfEb5ogQ/featured?view_as=subscriber"
     },
-    brandImage: '/images/brand-image.jpg',
+    brandImage: '/images/logo.png',
     aboutImage: '/images/about-image.jpg',
     aboutImageLg: '/images/about-image-lg.jpg',
     cvfile: '/files/Junior_software_engeneer.pdf'
@@ -202,80 +204,6 @@ const database = {
       subtitle: "Beautiful packet & product design.",
       imageUrl: "/images/portfolio-image-9.jpg",
       largeImageUrl: ["/images/portfolio-image-9-lg.jpg"]
-    }
-  ],
-  tutorial: [
-    {
-      id: 1,
-      title: "T-shirt Mockup",
-      description: "A beautiful t-shirt mockup.",
-      imageUrl: "/images/portfolio-image-1.jpg",
-      largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
-      url: 'https://dribbble.com'
-    },
-    {
-      id: 2,
-      title: "Coffee Mug",
-      description: "Awesome coffee mug design.",
-      imageUrl: "/images/portfolio-image-7.jpg",
-      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
-      url: 'https://facebook.com'
-    },
-    {
-      id: 3,
-      title: "Tea & Coffee Mug",
-      description: "Beautiful mug with logo.",
-      imageUrl: "/images/portfolio-image-7.jpg",
-      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
-      url: 'https://twitter.com'
-    },
-    {
-      id: 4,
-      title: "Pen Holder",
-      description: "A pen holder with beautiful design.",
-      imageUrl: "/images/portfolio-image-3.jpg",
-      largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
-      url: '#'
-    },
-    {
-      id: 5,
-      title: "Mug",
-      description: "Mug with awesome style",
-      imageUrl: "/images/portfolio-image-7.jpg",
-      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
-      url: 'https://twitter.com'
-    },
-    {
-      id: 6,
-      title: "Pendrive",
-      description: "Free pendrive mockup design.",
-      imageUrl: "/images/portfolio-image-7.jpg",
-      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
-      url: 'https://twitter.com'
-    },
-    {
-      id: 7,
-      title: "Beautiful Pendrive",
-      description: "Pendrive with great design & flexible.",
-      imageUrl: "/images/portfolio-image-7.jpg",
-      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
-      url: 'https://twitter.com'
-    },
-    {
-      id: 8,
-      title: "Sticker",
-      description: "Clip sticker mockup design.",
-      imageUrl: "/images/portfolio-image-7.jpg",
-      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
-      url: 'https://twitter.com'
-    },
-    {
-      id: 9,
-      title: "Packet",
-      description: "Beautiful packet & product design.",
-      imageUrl: "/images/portfolio-image-7.jpg",
-      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
-      url: 'https://twitter.com'
     }
   ],
   experience: {

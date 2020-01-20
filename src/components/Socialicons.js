@@ -19,19 +19,14 @@ function Socialicons(props){
           <LineIcon name="facebook"/>
         </a>
       </li>}
-      {!socialLinks.twitter ? null : <li>
-        <a rel="noopener noreferrer" target="_blank" href={socialLinks.twitter}>
-          <LineIcon name="twitter"/>
+      {!socialLinks.instagram ? null : <li>
+        <a rel="noopener noreferrer" target="_blank" href={socialLinks.instagram}>
+          <LineIcon name="instagram"/>
         </a>
       </li>}
-      {!socialLinks.pinterest ? null : <li>
-        <a rel="noopener noreferrer" target="_blank" href={socialLinks.pinterest}>
-          <LineIcon name="pinterest"/>
-        </a>
-      </li>}
-      {!socialLinks.behance ? null : <li>
-        <a rel="noopener noreferrer" target="_blank" href={socialLinks.behance}>
-          <LineIcon name="behance"/>
+      {!socialLinks.youtube ? null : <li>
+        <a rel="noopener noreferrer" target="_blank" href={socialLinks.youtube}>
+          <LineIcon name="youtube"/>
         </a>
       </li>}
       {!socialLinks.linkedin ? null : <li>
