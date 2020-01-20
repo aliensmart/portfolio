@@ -1,0 +1,427 @@
+import Mock from "../mock";
+
+const database = {
+  information: {
+    name: 'Abdoul Ouakil Kanazoe',
+    aboutContent: "I am a Full Stack developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.",
+    age: 26,
+    phone: '9292176681',
+    nationality: 'American',
+    language: 'English, French',
+    email: 'kaoua121@gmail.com',
+    address: '1351 clay ave, Bronx, NY 10456',
+    freelanceStatus: 'Available',
+    socialLinks: {
+      facebook: 'https://www.facebook.com/abd.kana.96',
+      hackerranck: 'https://www.hackerrank.com/kaoua121',
+      linkedin: 'https://www.linkedin.com/in/abdoul-ouakil-kanazoe-9b7037144/',
+      leetcode: 'https://leetcode.com/aliensmart/',
+      github: 'https://github.com/aliensmart'
+    },
+    brandImage: '/images/brand-image.jpg',
+    aboutImage: '/images/about-image.jpg',
+    aboutImageLg: '/images/about-image-lg.jpg',
+    cvfile: '/files/Junior_software_engeneer.pdf'
+  },
+  services: [
+    {
+      title: "Designer",
+      icon: 'color-pallet',
+      details: "With my skills in adobe Photoshop and adobe Illustrator I can provide you great and clean web design and graphic design"
+    },
+    {
+      title: "Developer",
+      icon: 'code',
+      details: "Will provide you clean website after the design and depending of your budget I can provide you the best website for your business"
+    },
+    {
+      title: "Photographer",
+      icon: 'camera',
+      details: "Photography was a hobby for me until I get into freelancing in 2018 until today, You can get custom photos ffor your website "
+    }
+  ],
+  reviews: [
+    {
+      id: 1,
+      content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam, aliquid maxime tempora.",
+      author: {
+        name: 'Burdette Turner',
+        designation: 'Web Developer, Abc Company'
+      }
+    },
+    {
+      id: 2,
+      content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam.",
+      author: {
+        name: 'Susan Yost',
+        designation: 'Client'
+      }
+    },
+    {
+      id: 3,
+      content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+      author: {
+        name: 'Irving Feeney',
+        designation: 'Fiverr Client'
+      }
+    }
+  ],
+  skills: [
+    {
+      title: "PYTHON",
+      years: "< 1 year"
+    },
+    {
+      title: "FLASK",
+      years: "< 1 year"
+    },
+    {
+      title: "CSS3",
+      years: "3 years"
+    },
+    {
+      title: "JAVASCRIPT",
+      years: "3 years"
+    },
+    {
+      title: "JQUERY",
+      years: "2 years"
+    },
+    {
+      title: "ReactJS",
+      years: "< 1 year"
+    },
+    {
+      title: "ADOBE PHOTOSHOP",
+      years: "3 years"
+    },
+    {
+      title: "ADOBE ILLUSTRATOR",
+      years: "3 years"
+    },
+    {
+      title: "ADOBE LIGHTROOM",
+      years: "3 years"
+    },
+    {
+      title: "HTML5",
+      years: "3 years"
+    },
+    {
+      title: "SQLITE3",
+      years: "< 1 year"
+    },
+    {
+      title: "MYSQL",
+      years: "1.5 year"
+    },
+    {
+      title: "PHP",
+      years: "1.5 year"
+    },
+    {
+      title: "WORDPRESS",
+      years: "2 years"
+    },
+    {
+      title: "SASS",
+      years: "2 years"
+    },
+    {
+      title: "BOOTSTRAP",
+      years: "< 1 year"
+    }
+  ],
+  portfolios: [
+    {
+      id: 1,
+      title: "T-shirt Mockup",
+      subtitle: "A beautiful t-shirt mockup.",
+      imageUrl: "/images/portfolio-image-1.jpg",
+      largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
+      url: 'https://dribbble.com'
+    },
+    {
+      id: 2,
+      title: "Coffee Mug",
+      subtitle: "Awesome coffee mug design.",
+      imageUrl: "/images/portfolio-image-4.jpg",
+      largeImageUrl: [
+        "/images/portfolio-image-4-lg.jpg",
+        "/images/portfolio-image-4-lg2.jpg"
+      ],
+      url: 'https://facebook.com'
+    },
+    {
+      id: 3,
+      title: "Tea & Coffee Mug",
+      subtitle: "Beautiful mug with logo.",
+      imageUrl: "/images/portfolio-image-2.jpg",
+      url: 'https://pinterest.com'
+    },
+    {
+      id: 4,
+      title: "Pen Holder",
+      subtitle: "A pen holder with beautiful design.",
+      imageUrl: "/images/portfolio-image-3.jpg",
+      largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
+      url: '#'
+    },
+    {
+      id: 5,
+      title: "Mug",
+      subtitle: "Mug with awesome style",
+      imageUrl: "/images/portfolio-image-5.jpg",
+      largeImageUrl: ["/images/portfolio-image-5-lg.jpg"]
+    },
+    {
+      id: 6,
+      title: "Pendrive",
+      subtitle: "Free pendrive mockup design.",
+      imageUrl: "/images/portfolio-image-6.jpg",
+      largeImageUrl: ["/images/portfolio-image-6-lg.jpg"]
+    },
+    {
+      id: 7,
+      title: "Beautiful Pendrive",
+      subtitle: "Pendrive with great design & flexible.",
+      imageUrl: "/images/portfolio-image-7.jpg",
+      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
+      url: 'https://twitter.com'
+    },
+    {
+      id: 8,
+      title: "Sticker",
+      subtitle: "Clip sticker mockup design.",
+      imageUrl: "/images/portfolio-image-8.jpg",
+      largeImageUrl: ["/images/portfolio-image-8-lg.jpg"]
+    },
+    {
+      id: 9,
+      title: "Packet",
+      subtitle: "Beautiful packet & product design.",
+      imageUrl: "/images/portfolio-image-9.jpg",
+      largeImageUrl: ["/images/portfolio-image-9-lg.jpg"]
+    }
+  ],
+  tutorial: [
+    {
+      id: 1,
+      title: "T-shirt Mockup",
+      description: "A beautiful t-shirt mockup.",
+      imageUrl: "/images/portfolio-image-1.jpg",
+      largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
+      url: 'https://dribbble.com'
+    },
+    {
+      id: 2,
+      title: "Coffee Mug",
+      description: "Awesome coffee mug design.",
+      imageUrl: "/images/portfolio-image-7.jpg",
+      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
+      url: 'https://facebook.com'
+    },
+    {
+      id: 3,
+      title: "Tea & Coffee Mug",
+      description: "Beautiful mug with logo.",
+      imageUrl: "/images/portfolio-image-7.jpg",
+      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
+      url: 'https://twitter.com'
+    },
+    {
+      id: 4,
+      title: "Pen Holder",
+      description: "A pen holder with beautiful design.",
+      imageUrl: "/images/portfolio-image-3.jpg",
+      largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
+      url: '#'
+    },
+    {
+      id: 5,
+      title: "Mug",
+      description: "Mug with awesome style",
+      imageUrl: "/images/portfolio-image-7.jpg",
+      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
+      url: 'https://twitter.com'
+    },
+    {
+      id: 6,
+      title: "Pendrive",
+      description: "Free pendrive mockup design.",
+      imageUrl: "/images/portfolio-image-7.jpg",
+      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
+      url: 'https://twitter.com'
+    },
+    {
+      id: 7,
+      title: "Beautiful Pendrive",
+      description: "Pendrive with great design & flexible.",
+      imageUrl: "/images/portfolio-image-7.jpg",
+      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
+      url: 'https://twitter.com'
+    },
+    {
+      id: 8,
+      title: "Sticker",
+      description: "Clip sticker mockup design.",
+      imageUrl: "/images/portfolio-image-7.jpg",
+      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
+      url: 'https://twitter.com'
+    },
+    {
+      id: 9,
+      title: "Packet",
+      description: "Beautiful packet & product design.",
+      imageUrl: "/images/portfolio-image-7.jpg",
+      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
+      url: 'https://twitter.com'
+    }
+  ],
+  experience: {
+    workingExperience: [
+      {
+        id: 1,
+        year: "10/17/2019 - 11/06/2019",
+        position: "Software Engineer",
+        company: "Kpass",
+        details: "A password manager like lastpass built using Python for the backend with libraries like Flask, Cryptography, Bcrypt, re, Sqlite3, os, for the back-end and React.js for the front-end; I've also built a chrome extension with HTML5, CSS3, and Javascript for user to easily save theire password without going to the main website.",
+        link:"#"
+      },
+      {
+        id: 2,
+        year: "11/07/2019 - 11/19/2019",
+        position: "Software Engineer",
+        company: "ChainMd",
+        details: "This is part of my project on Byte which is a web-app that help patients and hospital providers to share file securely using Blochain Technology. This app has been built with Python and its libraries(Flask, Sqlite3, Os, Savoir) for the back-end and the front-end Has been done with React.js.",
+        link:"#"
+      },
+      {
+        id: 3,
+        year: "2014 - 1016",
+        position: "Wordpress Developer",
+        company: "Raasse",
+        details: "A multivendor E-commerce built with Wordpress and customized using my skills in PHP, CSS3, and Javascript.",
+        link:"https://raasse.com/"
+      }
+    ],
+    educationExperience: [
+      {
+        id: 1,
+        year: "09/2019 - 11/2019",
+        graduation: "Python Fullstack Software Engineer(Python & React.js)",
+        university: "Byte Academy",
+        details: "After couple month of hard work and learning I've been graduated in byte academy(USA - New York) and I was able to build two(2) fullstack app "
+      },
+      {
+        id: 2,
+        year: "2016 - Present",
+        graduation: "Certifications",
+        university: "Udemy",
+        details: "Everyday Is a new day to learn new things so udemy has been one of my best mentor in my online training journey"
+      },
+      {
+        id: 3,
+        year: "2012 - 2015",
+        graduation: "High School Diploma",
+        university: "Lycee Professional Regional du Centre (LPRC)",
+        details: "I did My high school in a country call Burkina Faso, And graduated from my High school Diploma on Electronic Automobile in my home Town call Ouagadougou "
+      }
+    ]
+  },
+  blogs: [
+    {
+      id: 1,
+      title: "React new version is coming!",
+      imageUrl: "/images/blog-image-1.jpg",
+      content: "ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour.",
+      createTime: "03 December 2019"
+    },
+    {
+      id: 2,
+      title: "More about react hooks",
+      content: "ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour.",
+      createTime: "04 December 2019"
+    },
+    {
+      id: 3,
+      title: "Next generation javascript learning source",
+      content: "ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour.",
+      createTime: "05 December 2019"
+    },
+    {
+      id: 4,
+      title: "Free tutorial downloading link.",
+      imageUrl: "/images/blog-image-2.jpg",
+      content: "ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour.",
+      createTime: "06 December 2019"
+    },
+    {
+      id: 5,
+      title: "Get 2500 free mockup for design.",
+      youtubeUrl: "TKnufs85hXk",
+      content: "ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour.",
+      createTime: "08 December 2019"
+    },
+    {
+      id: 6,
+      title: "React vs Vue vs Angular, what is best?",
+      vimeoUrl: "23534361",
+      content: "ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour.",
+      createTime: "10 December 2019"
+    },
+    {
+      id: 7,
+      title: "Web design typography & spacing.",
+      content: "ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour.",
+      createTime: "03 December 2019"
+    },
+    {
+      id: 8,
+      title: "React new version is coming with a great features.",
+      content: "ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour. ReactJS is the most popular javascript framework now a days. Now it has comes with more and more new features. There is something called hooks, which has a great flavour.",
+      createTime: "03 December 2019"
+    }
+  ],
+  contactInfo: {
+    phoneNumbers: ['+1-929-217-6681'],
+    emailAddress: ['kaoua121@gmail.com'],
+    address: "1351 clay ave, Bronx, NY 10456"
+  }
+}
+
+
+Mock.onGet("/api/information").reply(config => {
+  const response = database.information;
+  return [200, response];
+});
+
+Mock.onGet("/api/services").reply(config => {
+  const response = database.services;
+  return [200, response];
+});
+
+Mock.onGet("/api/reviews").reply(config => {
+  const response = database.reviews;
+  return [200, response];
+});
+
+Mock.onGet("/api/skills").reply(config => {
+  const response = database.skills;
+  return [200, response];
+});
+
+Mock.onGet("/api/portfolios").reply(config => {
+  const response = database.portfolios;
+  return [200, response];
+});
+
+Mock.onGet("/api/experience").reply(config => {
+  const response = database.experience;
+  return [200, response];
+});
+
+Mock.onGet("/api/contactinfo").reply(config => {
+  const response = database.contactInfo;
+  return [200, response];
+});
