@@ -21,8 +21,8 @@ const database = {
       youtube: "https://www.youtube.com/channel/UCx4LVXKa_wh_JOfIfEb5ogQ/featured?view_as=subscriber"
     },
     brandImage: '/images/logo.png',
-    aboutImage: '/images/about-image.jpg',
-    aboutImageLg: '/images/about-image-lg.jpg',
+    aboutImage: '/images/profile_2.jpg',
+    aboutImageLg: '/images/profile_lg.jpg',
     cvfile: '/files/Junior_software_engeneer.pdf'
   },
   services: [
@@ -39,7 +39,7 @@ const database = {
     {
       title: "Photographer",
       icon: 'camera',
-      details: "Photography was a hobby for me until I get into freelancing in 2018 until today, You can get custom photos ffor your website "
+      details: "Photography was a hobby for me until I got into freelancing in 2018 until today, You can get custom photos for your website "
     }
   ],
   reviews: [
@@ -71,6 +71,10 @@ const database = {
   skills: [
     {
       title: "PYTHON",
+      years: "< 1 year"
+    },
+    {
+      title: "Django",
       years: "< 1 year"
     },
     {
@@ -137,73 +141,47 @@ const database = {
   portfolios: [
     {
       id: 1,
-      title: "T-shirt Mockup",
-      subtitle: "A beautiful t-shirt mockup.",
-      imageUrl: "/images/portfolio-image-1.jpg",
-      largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
-      url: 'https://dribbble.com'
+      title: "Kid Photo",
+      subtitle: "This picture was taken in summer 2019 at kids party",
+      imageUrl: "/images/kid.png",
+      largeImageUrl: ["/images/kid_lg.jpg"]
     },
     {
       id: 2,
-      title: "Coffee Mug",
-      subtitle: "Awesome coffee mug design.",
-      imageUrl: "/images/portfolio-image-4.jpg",
+      title: "End of Year Flyer",
+      subtitle: "Gref-eclat end of year Diner Gala party.",
+      imageUrl: "/images/end_of_year.png",
       largeImageUrl: [
-        "/images/portfolio-image-4-lg.jpg",
-        "/images/portfolio-image-4-lg2.jpg"
-      ],
-      url: 'https://facebook.com'
+        "/images/end_of_year_lg.png"
+      ]
     },
     {
       id: 3,
-      title: "Tea & Coffee Mug",
-      subtitle: "Beautiful mug with logo.",
-      imageUrl: "/images/portfolio-image-2.jpg",
-      url: 'https://pinterest.com'
+      title: "Raasse website",
+      subtitle: "This multivendor ecommerce website was built with Wordpress.",
+      imageUrl: "/images/raasse.jpg",
+      url: 'https://raasse.com/'
     },
     {
       id: 4,
-      title: "Pen Holder",
-      subtitle: "A pen holder with beautiful design.",
-      imageUrl: "/images/portfolio-image-3.jpg",
-      largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
-      url: '#'
+      title: "A Summer Photo",
+      subtitle: "This Photo was taken in a BBQ in Summer 2019",
+      imageUrl: "/images/man.png",
+      largeImageUrl: ["/images/man_lg.jpg"]
     },
     {
       id: 5,
-      title: "Mug",
-      subtitle: "Mug with awesome style",
-      imageUrl: "/images/portfolio-image-5.jpg",
-      largeImageUrl: ["/images/portfolio-image-5-lg.jpg"]
+      title: "Alienmoore website",
+      subtitle: "This is a personal website for building wordpress websites service",
+      imageUrl: "/images/alienmoore.png",
+      url: "https://alienmoore.com/"
     },
     {
       id: 6,
-      title: "Pendrive",
-      subtitle: "Free pendrive mockup design.",
-      imageUrl: "/images/portfolio-image-6.jpg",
-      largeImageUrl: ["/images/portfolio-image-6-lg.jpg"]
-    },
-    {
-      id: 7,
-      title: "Beautiful Pendrive",
-      subtitle: "Pendrive with great design & flexible.",
-      imageUrl: "/images/portfolio-image-7.jpg",
-      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
-      url: 'https://twitter.com'
-    },
-    {
-      id: 8,
-      title: "Sticker",
-      subtitle: "Clip sticker mockup design.",
-      imageUrl: "/images/portfolio-image-8.jpg",
-      largeImageUrl: ["/images/portfolio-image-8-lg.jpg"]
-    },
-    {
-      id: 9,
-      title: "Packet",
-      subtitle: "Beautiful packet & product design.",
-      imageUrl: "/images/portfolio-image-9.jpg",
-      largeImageUrl: ["/images/portfolio-image-9-lg.jpg"]
+      title: "Valentin's Day Flyer",
+      subtitle: "This is a flyer for valentins day",
+      imageUrl: "/images/valentin.png",
+      largeImageUrl: ["/images/valentin_lg.png"]
     }
   ],
   experience: {

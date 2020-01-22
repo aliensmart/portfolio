@@ -37,7 +37,7 @@ function Resumes(){
                 // </TrackVisibility>
                 <div className="col-lg-4 mt-30">
                   {skill.title} - ({skill.years})
-                  <span></span>
+                  
                 </div>
               ))}
             </div>
