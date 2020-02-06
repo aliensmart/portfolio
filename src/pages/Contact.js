@@ -14,26 +14,30 @@ function Contact(){
     subject: "",
     message: ""
   });
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMeassage] = useState("");
   const [error, setError] = useState(false);
-  const [message, setMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const submitHandler = (event) =>{
     event.preventDefault();
-    if( !formdata.name ){
+    if( !name){
       setError(true);
-      setMessage('Name is required');
-    } else if( !formdata.email ){
+      setErrorMessage('Name is required');
+    } else if( !email ){
       setError(true);
-      setMessage('Email is required');
-    } else if( !formdata.subject ){
+      setErrorMessage('Email is required');
+    } else if( !subject ){
       setError(true);
-      setMessage('Subject is required');
-    } else if( !formdata.message ){
+      setErrorMessage('Subject is required');
+    } else if( !message ){
       setError(true);
-      setMessage('Message is required');
+      setErrorMessage('Message is required');
     } else{
       setError(false);
-      setMessage('You message has been sent!!!');
+      setErrorMessage('You message has been sent!!!');
     }
   }
   const handleChange = (event) => {
@@ -48,16 +52,16 @@ function Contact(){
   }
 
   const handleAlerts = () => {
-    if(error && message){
+    if(error && errorMessage){
       return (
         <div className="alert alert-danger mt-4">
-          {message}
+          {errorMessage}
         </div>
       )
-    } else if(!error && message){
+    } else if(!error && errorMessage){
       return (
         <div className="alert alert-success mt-4">
-          {message}
+          {errorMessage}
         </div>
       )
     } else{
