@@ -8,21 +8,36 @@ function Contact(){
   const [phoneNumbers, setPhoneNumbers] = useState([]);
   const [emailAddress, setEmailAddress] = useState([]);
   const [address, setAddress] = useState([]);
-  const [formdata, setFormdata] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: ""
-  });
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
-  const [message, setMeassage] = useState("");
+  const [message, setMessage] = useState("");
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const [loading, setLoading] = useState(true)
+
+  const messagedata = ()=>{
+    const sendData = async ()=>{
+      setLoading(true)
+      try{
+        const data = {
+          name: name,
+          email: email,
+          subject: subject,
+          message: message
+        }
+        const res = await axios.post("http://localhost:5000/contact", data)
+        console.log(res)
+      } catch(error){
+        console.log(error)
+      }
+
+    }
+    sendData()
+  };
 
   const submitHandler = (event) =>{
-    event.preventDefault();
+    // event.preventDefault();
     if( !name){
       setError(true);
       setErrorMessage('Name is required');
@@ -36,15 +51,10 @@ function Contact(){
       setError(true);
       setErrorMessage('Message is required');
     } else{
+      messagedata()
       setError(false);
       setErrorMessage('You message has been sent!!!');
     }
-  }
-  const handleChange = (event) => {
-    setFormdata({
-      ...formdata,
-      [event.currentTarget.name] : event.currentTarget.value
-    })
   }
   const numberFormatter = (number) =>{
     const phnNumber = number;
@@ -90,19 +100,19 @@ function Contact(){
                 <form action="#" className="mi-form mi-contact-form" onSubmit={submitHandler}>
                   <div className="mi-form-field">
                     <label htmlFor="contact-form-name">Enter your name*</label>
-                    <input onChange={handleChange} type="text" name="name" id="contact-form-name" value={formdata.name}/>
+                    <input onChange={e=>setName(e.target.value)} type="text" name="name" id="contact-form-name"/>
                   </div>
                   <div className="mi-form-field">
                     <label htmlFor="contact-form-email">Enter your email*</label>
-                    <input onChange={handleChange} type="text" name="email" id="contact-form-email" value={formdata.email}/>
+                    <input onChange={e=>setEmail(e.target.value)} type="text" name="email" id="contact-form-email"/>
                   </div>
                   <div className="mi-form-field">
                     <label htmlFor="contact-form-subject">Enter your subject*</label>
-                    <input onChange={handleChange} type="text" name="subject" id="contact-form-subject" value={formdata.subject}/>
+                    <input onChange={e=>setSubject(e.target.value)} type="text" name="subject" id="contact-form-subject"/>
                   </div>
                   <div className="mi-form-field">
                     <label htmlFor="contact-form-message">Enter your Message*</label>
-                    <textarea onChange={handleChange} name="message" id="contact-form-message" cols="30" rows="6" value={formdata.message}></textarea>
+                    <textarea onChange={e=>setMessage(e.target.value)} name="message" id="contact-form-message" cols="30" rows="6"></textarea>
                   </div>
                   <div className="mi-form-field">
                     <button className="mi-button" type="submit">Send Mail</button>
