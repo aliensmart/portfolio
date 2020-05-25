@@ -39,6 +39,7 @@ function Header(){
                 <li onClick={e=>{javascript:timeReload(10)}}><NavLink exact to="/" ><span>Home</span></NavLink></li>
                     <li><NavLink to="/about"><span>About</span></NavLink></li>
                     <li><NavLink to="/resume"><span>Resume</span></NavLink></li>
+                    <li><NavLink to="/certifications"><span>Certifications</span></NavLink></li>
                     {/* <li><NavLink to="/tutorials"><span>Tutorials</span></NavLink></li> */}
                     <li><NavLink to="/portfolios"><span>Portfolios</span></NavLink></li>
                     <li><NavLink to="/contact"><span>Contact</span></NavLink></li>
