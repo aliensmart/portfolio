@@ -10,23 +10,20 @@ function Certifications(props) {
     setToggler(value);
   }
 
+
   return (
     <div className={props.isVisible ? "mi-portfolio mi-portfolio-visible" : "mi-portfolio"}>
       <div className="mi-portfolio-image">
         
-        {!imageUrl ? <img src={largeImageUrl} className="mi-portfolio-image-small" alt={title} /> :
-        <img src={imageUrl} alt={title} />}
+        {largeImageUrl ? <img src={largeImageUrl} className="mi-portfolio-image-small" alt={title} /> :
+        null }
         <ul>
-          {!largeImageUrl ? null : <li>
+          {!largeImageUrl ?  null :  <li>
             <button onClick={() => handleToggler(!toggler)}>
               <Icon.ZoomIn/>
             </button>
           </li>}
-          { url ? <li>
-            <a rel="noopener noreferrer" target="_blank" href={url}>
-              <Icon.Link/>
-            </a>
-          </li> : null}
+          
         </ul>
       </div>
       {!url ? <h5>{title}</h5> : <h5>

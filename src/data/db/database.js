@@ -187,42 +187,138 @@ const database = {
   certifications: [
     {
       id: 1,
-      title: "Kid Photo",
-      subtitle: "This picture was taken in summer 2019 at kids party",
-      largeImageUrl: ["/images/kid_lg.jpg"]
+      title: "Algoritm Trading Using Python",
+      subtitle: "10 hours of Algorithmic Trading: Backtesting, Optimize & Automate in Python on Udemy",
+      largeImageUrl: ["/images/certificates/algo_trading2.jpg"]
     },
     {
       id: 2,
-      title: "End of Year Flyer",
-      subtitle: "Gref-eclat end of year Diner Gala party.",
-      largeImageUrl: [
-        "/images/end_of_year_lg.png"
-      ]
+      title: "2nd Algorithm Trading With Python",
+      subtitle: "17 hours of Algorithmic Trading & Quantitative analysis using Python on Udemy",
+      largeImageUrl: ["/images/certificates/Algorithm_trading.jpg"]
     },
     {
       id: 3,
       title: "Raasse website",
-      subtitle: "This multivendor ecommerce website was built with Wordpress.",
-      largeImageUrl: ["/images/valentin_lg.png"]
+      subtitle: "This is a flyer for valentins day",
+      largeImageUrl: ["/images/certificates/clickbank.jpg"]
     },
     {
       id: 4,
       title: "A Summer Photo",
-      subtitle: "This Photo was taken in a BBQ in Summer 2019",
-      largeImageUrl: ["/images/man_lg.jpg"]
+      subtitle: "This is a flyer for valentins day",
+      largeImageUrl: ["/images/certificates/css_sass.jpg"]
     },
     {
       id: 5,
       title: "Alienmoore website",
-      subtitle: "This is a personal website for building wordpress websites service",
-      largeImageUrl: ["/images/valentin_lg.png"]
+      subtitle: "This is a flyer for valentins day",
+      largeImageUrl: ["/images/certificates/django.jpg"]
 
     },
     {
       id: 6,
       title: "Valentin's Day Flyer",
       subtitle: "This is a flyer for valentins day",
-      largeImageUrl: ["/images/valentin_lg.png"]
+      largeImageUrl: ["/images/certificates/ebay_dropship.jpg"]
+    },
+    {
+      id: 7,
+      title: "Alienmoore website",
+      subtitle: "This is a flyer for valentins day",
+      largeImageUrl: ["/images/certificates/ethical_hacking.jpg"]
+
+    },
+    {
+      id: 8,
+      title: "Alienmoore website",
+      subtitle: "This is a flyer for valentins day",
+      largeImageUrl: ["/images/certificates/forex_trading.jpg"]
+
+    },
+    {
+      id: 9,
+      title: "Alienmoore website",
+      subtitle: "This is a flyer for valentins day",
+      largeImageUrl: ["/images/certificates/hacker_exposed.jpg"]
+
+    },
+    {
+      id: 10,
+      title: "Alienmoore website",
+      subtitle: "This is a flyer for valentins day",
+      largeImageUrl: ["/images/certificates/javascript.jpg"]
+
+    },
+    {
+      id: 11,
+      title: "Alienmoore website",
+      subtitle: "This is a flyer for valentins day",
+      largeImageUrl: ["/images/certificates/javascript2.jpg"]
+
+    },
+    {
+      id: 12,
+      title: "Alienmoore website",
+      subtitle: "This is a flyer for valentins day",
+      largeImageUrl: ["/images/certificates/machin_learning.jpg"]
+
+    },
+    {
+      id: 13,
+      title: "Alienmoore website",
+      subtitle: "This is a flyer for valentins day",
+      largeImageUrl: ["/images/certificates/php_ecommerce.jpg"]
+
+    },
+    {
+      id: 14,
+      title: "Alienmoore website",
+      subtitle: "This is a flyer for valentins day",
+      largeImageUrl: ["/images/certificates/php_mysql.jpg"]
+
+    },
+    {
+      id: 15,
+      title: "Alienmoore website",
+      subtitle: "This is a flyer for valentins day",
+      largeImageUrl: ["/images/certificates/php.jpg"]
+
+    },
+    {
+      id: 16,
+      title: "Alienmoore website",
+      subtitle: "This is a flyer for valentins day",
+      largeImageUrl: ["/images/certificates/social_media_marketing.jpg"]
+
+    },
+    {
+      id: 17,
+      title: "Alienmoore website",
+      subtitle: "This is a flyer for valentins day",
+      largeImageUrl: ["/images/certificates/ui.jpg"]
+
+    },
+    {
+      id: 18,
+      title: "Alienmoore website",
+      subtitle: "This is a flyer for valentins day",
+      largeImageUrl: ["/images/certificates/wordpress_plugins_themes_dev.jpg"]
+
+    },
+    {
+      id: 19,
+      title: "Alienmoore website",
+      subtitle: "This is a flyer for valentins day",
+      largeImageUrl: ["/images/certificates/wordpress_theme.jpg"]
+
+    },
+    {
+      id: 20,
+      title: "Alienmoore website",
+      subtitle: "This is a flyer for valentins day",
+      largeImageUrl: ["/images/certificates/wordpress_website.jpg"]
+
     }
   ],
   experience: {
@@ -364,7 +460,7 @@ Mock.onGet("/api/portfolios").reply(config => {
 });
 
 Mock.onGet("/api/certifications").reply(config => {
-  const response = database.portfolios;
+  const response = database.certifications;
   return [200, response];
 });
 
