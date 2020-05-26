@@ -102,6 +102,9 @@ function About(){
                   {!information.nationality ? null : <li>
                     <b>Nationality</b> {information.nationality}
                   </li>}
+                  {!information.Authorization ? null : <li>
+                    <b>Authorization</b> {information.Authorization}
+                  </li>}
                   {!information.language ? null : <li>
                     <b>Languages</b> {information.language}
                   </li>}

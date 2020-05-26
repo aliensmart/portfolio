@@ -6,7 +6,8 @@ const database = {
     aboutContent: "I am a Full Stack developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.",
     age: 26,
     phone: '9292176681',
-    nationality: 'American',
+    nationality: 'Burkinabe',
+    Authorization: 'Authorized to work at any company in USA',
     language: 'English, French',
     email: 'kaoua121@gmail.com',
     address: '1351 clay ave, Bronx, NY 10456',
@@ -79,6 +80,10 @@ const database = {
     },
     {
       title: "FLASK",
+      years: "< 1 year"
+    },
+    {
+      title: "MACHINE LEARNING",
       years: "< 1 year"
     },
     {
@@ -266,57 +271,57 @@ const database = {
     },
     {
       id: 13,
-      title: "Alienmoore website",
-      subtitle: "This is a flyer for valentins day",
+      title: "PHP & MYSQL - Ecommerce",
+      subtitle: "17.5 Hours of Learn Ecommerce website in PHP & Mysql from Scratch on Udemy",
       largeImageUrl: ["/images/certificates/php_ecommerce.jpg"]
 
     },
     {
       id: 14,
-      title: "Alienmoore website",
-      subtitle: "This is a flyer for valentins day",
+      title: "PHP - MYSQL",
+      subtitle: "20 Hours of Complete PHP MYSQL Professional Courses With 5 Projects",
       largeImageUrl: ["/images/certificates/php_mysql.jpg"]
 
     },
     {
       id: 15,
-      title: "Alienmoore website",
-      subtitle: "This is a flyer for valentins day",
+      title: "PHP - Beguinner to Master",
+      subtitle: "38 hours of PHP for Beginners - Become PHP Master On Udemy",
       largeImageUrl: ["/images/certificates/php.jpg"]
 
     },
     {
       id: 16,
-      title: "Alienmoore website",
-      subtitle: "This is a flyer for valentins day",
+      title: "Social Media Marketing",
+      subtitle: "7.5 hours of Social Media Marketing Mastery | Ads on 10+ Platforms On Udemy",
       largeImageUrl: ["/images/certificates/social_media_marketing.jpg"]
 
     },
     {
       id: 17,
-      title: "Alienmoore website",
-      subtitle: "This is a flyer for valentins day",
+      title: "UI - Photoshop",
+      subtitle: "11.5 hours of Design With Photoshop from Beginner to Expert in 15 days",
       largeImageUrl: ["/images/certificates/ui.jpg"]
 
     },
     {
       id: 18,
-      title: "Alienmoore website",
-      subtitle: "This is a flyer for valentins day",
+      title: "WORDPRESS THEME & PLUGINS",
+      subtitle: "16 hours of Complete Wordpress Theme & Plugins Development Course On Udemy",
       largeImageUrl: ["/images/certificates/wordpress_plugins_themes_dev.jpg"]
 
     },
     {
       id: 19,
-      title: "Alienmoore website",
-      subtitle: "This is a flyer for valentins day",
+      title: "WORDPRESS THEME DEV - 2019",
+      subtitle: "12 hours of Wordpress Theme Development With Bootstrap On Udemy",
       largeImageUrl: ["/images/certificates/wordpress_theme.jpg"]
 
     },
     {
       id: 20,
-      title: "Alienmoore website",
-      subtitle: "This is a flyer for valentins day",
+      title: "WORDPRESS WEBSITES",
+      subtitle: "21.5 hours of the complete Worpdpress Website Business Course On Udemy",
       largeImageUrl: ["/images/certificates/wordpress_website.jpg"]
 
     }
