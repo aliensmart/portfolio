@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import TrackVisibility from "react-on-screen";
-import Portfolio from '../components/Certifications';
+import Certification from '../components/Certifications';
 import Sectiontitle from "../components/Sectiontitle";
 import Layout from "../components/Layout";
 const Certifications = ()=>{
-const [portfolios, setPortfoios] = useState([]);
+const [certifications, setCertifications] = useState([]);
 
   useEffect(() => {
-    axios.get('/api/portfolios')
+    axios.get('/api/certifications')
       .then( response => {
-        setPortfoios(response.data);
+        setCertifications(response.data);
       })
   })
 
@@ -20,9 +20,9 @@ const [portfolios, setPortfoios] = useState([]);
         <div className="container">
           <Sectiontitle title="Portfolios" />
           <div className="row mt-30-reverse">
-            {portfolios.map(portfolio => (
-              <TrackVisibility once offset={200} className="col-lg-4 col-md-6 col-12 mt-30" key={portfolio.id}>
-                <Portfolio content={portfolio}/>
+            {certifications.map(certification => (
+              <TrackVisibility once offset={200} className="col-lg-4 col-md-6 col-12 mt-30" key={certification.id}>
+                <Certification content={certification}/>
               </TrackVisibility>
             ))}
           </div>

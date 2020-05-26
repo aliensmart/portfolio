@@ -19,10 +19,9 @@ function Header(){
         axios.get('/api/information')
             .then(response =>{
                 setInformation(response.data);
-                console.log(response)
             })
     }, [])
-    console.log(information)
+
     
     return (
         <nav className={navigationToggler ? "mi-header is-visible" : "mi-header"}>
