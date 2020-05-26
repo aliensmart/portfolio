@@ -199,68 +199,68 @@ const database = {
     },
     {
       id: 3,
-      title: "Raasse website",
-      subtitle: "This is a flyer for valentins day",
+      title: "Clickbank Facebook Ads",
+      subtitle: "3.5 Hours of Clickbank Success With Facebook Ads Super Strategy On Udemy",
       largeImageUrl: ["/images/certificates/clickbank.jpg"]
     },
     {
       id: 4,
-      title: "A Summer Photo",
-      subtitle: "This is a flyer for valentins day",
+      title: "CSS & Sass",
+      subtitle: "28 hours of  Advanced Css And Sass: Flexbox, Grid, Animations and More On Udemy",
       largeImageUrl: ["/images/certificates/css_sass.jpg"]
     },
     {
       id: 5,
-      title: "Alienmoore website",
-      subtitle: "This is a flyer for valentins day",
+      title: "Python & Django Fullstack",
+      subtitle: "32 Hours of Python and Django Full Stack Web Developer Bootcamp On Udemy",
       largeImageUrl: ["/images/certificates/django.jpg"]
 
     },
     {
       id: 6,
-      title: "Valentin's Day Flyer",
-      subtitle: "This is a flyer for valentins day",
+      title: "Ebay Dropsipping",
+      subtitle: "6.5 Hours of Ebay Drop Shipping Guide With No Inventory - Work From Home On Udemy",
       largeImageUrl: ["/images/certificates/ebay_dropship.jpg"]
     },
     {
       id: 7,
-      title: "Alienmoore website",
-      subtitle: "This is a flyer for valentins day",
+      title: "Ethical Hacking",
+      subtitle: "14 Hours of Learn Ethical Hacking From Scratch On Udemy",
       largeImageUrl: ["/images/certificates/ethical_hacking.jpg"]
 
     },
     {
       id: 8,
-      title: "Alienmoore website",
-      subtitle: "This is a flyer for valentins day",
+      title: "Forex Trading",
+      subtitle: "5.5 Hours Of Forex Trading A-Z On Udemy",
       largeImageUrl: ["/images/certificates/forex_trading.jpg"]
 
     },
     {
       id: 9,
-      title: "Alienmoore website",
-      subtitle: "This is a flyer for valentins day",
+      title: "Hackers Exposed",
+      subtitle: "12 Hours Of The Complete Cyber Security Course: Hackers Exposed!",
       largeImageUrl: ["/images/certificates/hacker_exposed.jpg"]
 
     },
     {
       id: 10,
-      title: "Alienmoore website",
-      subtitle: "This is a flyer for valentins day",
+      title: "Javascript Weird Part",
+      subtitle: "11.5 Hours of Javascript: Understanding The Weird Parts On Udemy",
       largeImageUrl: ["/images/certificates/javascript.jpg"]
 
     },
     {
       id: 11,
-      title: "Alienmoore website",
-      subtitle: "This is a flyer for valentins day",
+      title: "Javascript",
+      subtitle: "28 Hours Of Complete Javascript Courses 2019 On Udemy",
       largeImageUrl: ["/images/certificates/javascript2.jpg"]
 
     },
     {
       id: 12,
-      title: "Alienmoore website",
-      subtitle: "This is a flyer for valentins day",
+      title: "Machine Learning",
+      subtitle: "Machine Learning A-Z: Hands On Python & R In Data Science",
       largeImageUrl: ["/images/certificates/machin_learning.jpg"]
 
     },
