@@ -189,14 +189,12 @@ const database = {
       id: 1,
       title: "Kid Photo",
       subtitle: "This picture was taken in summer 2019 at kids party",
-      imageUrl: "/images/kid.png",
       largeImageUrl: ["/images/kid_lg.jpg"]
     },
     {
       id: 2,
       title: "End of Year Flyer",
       subtitle: "Gref-eclat end of year Diner Gala party.",
-      imageUrl: "/images/end_of_year.png",
       largeImageUrl: [
         "/images/end_of_year_lg.png"
       ]
@@ -205,28 +203,25 @@ const database = {
       id: 3,
       title: "Raasse website",
       subtitle: "This multivendor ecommerce website was built with Wordpress.",
-      imageUrl: "/images/raasse.jpg",
-      url: 'https://raasse.com/'
+      largeImageUrl: ["/images/valentin_lg.png"]
     },
     {
       id: 4,
       title: "A Summer Photo",
       subtitle: "This Photo was taken in a BBQ in Summer 2019",
-      imageUrl: "/images/man.png",
       largeImageUrl: ["/images/man_lg.jpg"]
     },
     {
       id: 5,
       title: "Alienmoore website",
       subtitle: "This is a personal website for building wordpress websites service",
-      imageUrl: "/images/alienmoore.png",
-      url: "https://alienmoore.com/"
+      largeImageUrl: ["/images/valentin_lg.png"]
+
     },
     {
       id: 6,
       title: "Valentin's Day Flyer",
       subtitle: "This is a flyer for valentins day",
-      imageUrl: "/images/valentin.png",
       largeImageUrl: ["/images/valentin_lg.png"]
     }
   ],
@@ -364,6 +359,11 @@ Mock.onGet("/api/skills").reply(config => {
 });
 
 Mock.onGet("/api/portfolios").reply(config => {
+  const response = database.portfolios;
+  return [200, response];
+});
+
+Mock.onGet("/api/certifications").reply(config => {
   const response = database.portfolios;
   return [200, response];
 });
