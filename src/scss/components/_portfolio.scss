@@ -7,9 +7,16 @@
   visibility: hidden;
   opacity: 0;
 
+
   &-image {
     display: block;
     position: relative;
+
+    &-small{
+      object-fit: cover;
+      width: 550px;
+      height: 250px;
+    }
     
     &::before {
       content: "";

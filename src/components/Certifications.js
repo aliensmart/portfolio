@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as Icon from "react-feather";
 import FsLightbox from "fslightbox-react";
 
-function Portfolio(props) {
+function Certifications(props) {
   const [toggler, setToggler] = useState(false);
   const {title, subtitle, imageUrl, largeImageUrl, url} = props.content;
   
@@ -44,4 +44,4 @@ function Portfolio(props) {
   );
 }
 
-export default Portfolio;
+export default Certifications;

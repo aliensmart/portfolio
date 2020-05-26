@@ -7,6 +7,7 @@ import Resumes from "./pages/Resumes";
 import Portfolios from "./pages/Portfolios";
 import Contact from "./pages/Contact";
 import Tutorials from './pages/Tutorials'
+import Certification from './pages/Certifications'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
+        <Route path="/certifications" component={Certification} />
         <Route path="/resume" component={Resumes} />
         <Route path="/portfolios" component={Portfolios} />
         <Route path="/contact" component={Contact} />
