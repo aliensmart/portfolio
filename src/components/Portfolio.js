@@ -37,7 +37,7 @@ function Portfolio(props) {
       {subtitle ? <h6>{subtitle}</h6> : null}
       {!largeImageUrl ? null : <FsLightbox
         toggler={toggler}
-        sources={largeImageUrl[0]}
+        sources={largeImageUrl}
         />
       }
     </div>

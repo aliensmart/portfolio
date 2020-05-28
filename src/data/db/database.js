@@ -146,6 +146,12 @@ const database = {
   portfolios: [
     {
       id: 1,
+      title: "Tatiana",
+      subtitle: "Photoshoot of the model Tatiana",
+      largeImageUrl: ["/images/IMG_4826_pp.gif",]
+    },
+    {
+      id: 1,
       title: "Kid Photo",
       subtitle: "This picture was taken in summer 2019 at kids party",
       imageUrl: "/images/kid.png",
@@ -328,6 +334,14 @@ const database = {
   ],
   experience: {
     workingExperience: [
+      {
+        id: 4,
+        year: "02/22/2020 - 06/01/2020",
+        position: "React.js developer",
+        company: "letslearncodes",
+        details: "My Portfolio listing my resume and everything about me, Developed using only React.js and a simple Flask",
+        link:"letslearncodes.com"
+      },
       {
         id: 1,
         year: "10/17/2019 - 11/06/2019",

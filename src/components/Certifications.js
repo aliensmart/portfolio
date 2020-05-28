@@ -4,7 +4,7 @@ import FsLightbox from "fslightbox-react";
 
 function Certifications(props) {
   const [toggler, setToggler] = useState(false);
-  const {title, subtitle, imageUrl, largeImageUrl, url} = props.content;
+  const {title, subtitle, largeImageUrl, url} = props.content;
   
   const handleToggler = (value) => {
     setToggler(value);

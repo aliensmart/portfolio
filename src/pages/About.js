@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import FsLightbox from "fslightbox-react";
 import * as Icon from "react-feather";
 import Sectiontitle from "../components/Sectiontitle";
@@ -14,27 +14,27 @@ function About(){
   const [services, setServices] = useState([]);
   const [reviews, setReviews] = useState([]);
 
-  const sliderSettings = {
-    dots: false,
-    infinite: true,
-    arrows: false,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    autoplay: true,
-    autoplaySpeed: 6000,
-    pauseOnHover: true,
-    adaptiveHeight: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-    ]
-  };
+  // const sliderSettings = {
+  //   dots: false,
+  //   infinite: true,
+  //   arrows: false,
+  //   speed: 500,
+  //   slidesToShow: 2,
+  //   slidesToScroll: 2,
+  //   autoplay: true,
+  //   autoplaySpeed: 6000,
+  //   pauseOnHover: true,
+  //   adaptiveHeight: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1
+  //       }
+  //     },
+  //   ]
+  // };
 
   const handleToggler = (event) => {
     setToggler({
