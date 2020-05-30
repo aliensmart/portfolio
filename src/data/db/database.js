@@ -3,7 +3,7 @@ import Mock from "../mock";
 const database = {
   information: {
     name: 'Abdoul Ouakil Kanazoe',
-    aboutContent: "I am a Full Stack developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.",
+    aboutContent: "",
     age: 26,
     phone: '9292176681',
     nationality: 'Burkinabe',
@@ -79,11 +79,35 @@ const database = {
       years: "< 1 year"
     },
     {
+      title: "Numpy",
+      years: "< 1 year"
+    },
+    {
+      title: "Scikit-learn",
+      years: "< 1 year"
+    },
+    {
+      title: "Pandas",
+      years: "< 1 year"
+    },
+    {
+      title: "Matplotlib",
+      years: "< 1 year"
+    },
+    {
+      title: "Keras",
+      years: "< 1 year"
+    },
+    {
+      title: "Theano",
+      years: "< 1 year"
+    },
+    {
       title: "FLASK",
       years: "< 1 year"
     },
     {
-      title: "MACHINE LEARNING",
+      title: "Machine Learning",
       years: "< 1 year"
     },
     {
@@ -145,10 +169,22 @@ const database = {
   ],
   portfolios: [
     {
-      id: 1,
+      id: 9,
+      title: "Mariage Photoshoot",
+      subtitle: "",
+      largeImageUrl: ["/images/IMG_3736.jpg","/images/IMG_3737.jpg", "/images/IMG_3738.jpg"]
+    },
+    {
+      id: 8,
+      title: "Sonia",
+      subtitle: "Personal Photoshoot of the model Sonia",
+      largeImageUrl: ["/images/IMG_4826_pp.gif","/images/IMG_4834_pp.gif", "/images/IMG_4848_pp.jpg"]
+    },
+    {
+      id: 7,
       title: "Tatiana",
       subtitle: "Photoshoot of the model Tatiana",
-      largeImageUrl: ["/images/IMG_4826_pp.gif",]
+      largeImageUrl: ["/images/IMG_5183_pp.gif","/images/IMG_5171_pp.gif", "/images/IMG_5098_pp.jpg"]
     },
     {
       id: 1,
@@ -196,6 +232,25 @@ const database = {
     }
   ],
   certifications: [
+    {
+      id: 12,
+      title: "Machine Learning",
+      subtitle: "Machine Learning A-Z: Hands On Python & R In Data Science",
+      largeImageUrl: ["/images/certificates/machin_learning.jpg"]
+
+    },
+    {
+      id: 22,
+      title: "Python Fullstack Immersive",
+      subtitle: "This is a certificates of regcontion of the successful completion of 420 hours python programming training",
+      largeImageUrl: ["/images/certificates/byte_academy.jpg"]
+    },
+    {
+      id: 21,
+      title: "Certificate of recognition",
+      subtitle: "This is a certificates of regcontion on the Photos and services I did for BETHEL HAMLIRI",
+      largeImageUrl: ["/images/certificates/recognition_certificate.jpg"]
+    },
     {
       id: 1,
       title: "Algoritm Trading Using Python",
@@ -269,13 +324,6 @@ const database = {
 
     },
     {
-      id: 12,
-      title: "Machine Learning",
-      subtitle: "Machine Learning A-Z: Hands On Python & R In Data Science",
-      largeImageUrl: ["/images/certificates/machin_learning.jpg"]
-
-    },
-    {
       id: 13,
       title: "PHP & MYSQL - Ecommerce",
       subtitle: "17.5 Hours of Learn Ecommerce website in PHP & Mysql from Scratch on Udemy",
@@ -343,12 +391,20 @@ const database = {
         link:"letslearncodes.com"
       },
       {
+        id: 5,
+        year: "12/09/2019 - 12/20/2019",
+        position: "Fullstack developer (intern)",
+        company: "Spryte",
+        details: "Participated in a sprint(2 weeks) to build a web app called Superlative a video call meeting app, Using Python and React.js",
+        link:"https://www.sprytelabs.com/"
+      },
+      {
         id: 1,
         year: "10/17/2019 - 11/06/2019",
         position: "Software Engineer",
         company: "Kpass",
         details: "A password manager like lastpass built using Python for the backend with libraries like Flask, Cryptography, Bcrypt, re, Sqlite3, os, for the back-end and React.js for the front-end; I've also built a chrome extension with HTML5, CSS3, and Javascript for user to easily save theire password without going to the main website.",
-        link:"#"
+        link:"https://github.com/aliensmart/Project"
       },
       {
         id: 2,
@@ -356,11 +412,11 @@ const database = {
         position: "Software Engineer",
         company: "ChainMd",
         details: "This is part of my project on Byte which is a web-app that help patients and hospital providers to share file securely using Blochain Technology. This app has been built with Python and its libraries(Flask, Sqlite3, Os, Savoir) for the back-end and the front-end Has been done with React.js.",
-        link:"#"
+        link:"https://github.com/aliensmart/group_project"
       },
       {
         id: 3,
-        year: "2014 - 1016",
+        year: "2018",
         position: "Wordpress Developer",
         company: "Raasse",
         details: "A multivendor E-commerce built with Wordpress and customized using my skills in PHP, CSS3, and Javascript.",
@@ -447,7 +503,7 @@ const database = {
   ],
   contactInfo: {
     phoneNumbers: ['+1-929-217-6681'],
-    emailAddress: ['kaoua121@gmail.com'],
+    emailAddress: ['abdoul.engineer@gmail.com'],
     address: "1351 clay ave, Bronx, NY 10456"
   }
 }

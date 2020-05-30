@@ -97,6 +97,7 @@ function Contact(){
             <div className="col-lg-6">
               <div className="mi-contact-formwrapper">
                 <h4>Get In Touch</h4>
+                <p className="color-theme">Please contact me on My email directly abdoul.engineer@gmail.com</p>
                 <form action="#" className="mi-form mi-contact-form" onSubmit={submitHandler}>
                   <div className="mi-form-field">
                     <label htmlFor="contact-form-name">Enter your name*</label>

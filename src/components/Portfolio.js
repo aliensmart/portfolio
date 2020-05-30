@@ -14,7 +14,7 @@ function Portfolio(props) {
     <div className={props.isVisible ? "mi-portfolio mi-portfolio-visible" : "mi-portfolio"}>
       <div className="mi-portfolio-image">
         
-        {!imageUrl ? <img src={largeImageUrl} className="mi-portfolio-image-small" alt={title} /> :
+        {!imageUrl ? <img src={largeImageUrl[0]} className="mi-portfolio-image-small" alt={title} /> :
         <img src={imageUrl} alt={title} />}
         <ul>
           {!largeImageUrl ? null : <li>

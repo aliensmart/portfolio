@@ -85,9 +85,16 @@ function About(){
                   I am <span className="color-theme">{information.name}</span>
                 </h3>
                 <p>
-                  I am a frontend web developer. I can provide clean code and
-                  pixel perfect design. I also make website more & more
-                  interactive with web animations.
+                Experienced Python and Javascript Developer,                  
+                keen in learning new languages or improving my experiences 
+                The programming languages I already know. I am always willing 
+                To go the extra miles to improve or resolve the problem at hand. 
+                Proficient in providing clean codes for any project I do.
+                I am willing to move around for my work, I am flexible for any work schedule.
+                </p>
+                <p className="color-theme">
+                    The more time You don't Hire me, The more skills I get and 
+                    the more money You have to spend on Hiring me in the future
                 </p>
                 <ul>
                   {!information.name ? null : <li>

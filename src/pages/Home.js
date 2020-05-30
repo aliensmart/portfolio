@@ -9,9 +9,9 @@ function Home(){
   const paramConfig = {
     particles: {
       number: {
-        value: 160,
+        value: 260,
         density: {
-          enable: false
+          enable: true
         }
       },
       color: {
@@ -35,7 +35,7 @@ function Home(){
         random: true,
         speed: 1,
         direction: "left",
-        out_mode: "in"
+        out_mode: "out"
       }
     }
   };
