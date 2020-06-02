@@ -383,6 +383,14 @@ const database = {
   experience: {
     workingExperience: [
       {
+        id: 6,
+        year: "04/18/2020 - Present",
+        position: "Softwar Engineer",
+        company: "Personal Project",
+        details: "A personal project that uses Oanda Rest API to make trades, This project is done using Python. I still work on making the bot better.",
+        link:"https://github.com/aliensmart/OANDA_REST_API_BOT"
+      },
+      {
         id: 4,
         year: "02/22/2020 - 06/01/2020",
         position: "React.js developer",
