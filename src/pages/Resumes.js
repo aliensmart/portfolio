@@ -3,8 +3,9 @@ import axios from 'axios';
 import Sectiontitle from "../components/Sectiontitle";
 import Smalltitle from '../components/Smalltitle';
 import Layout from "../components/Layout";
-// import Progress from "../components/Progress";
+import Progress from "../components/Progress";
 import Resume from "../components/Resume";
+import TrackVisibility from "react-on-screen";
 
 function Resumes(){
   const [skills, setSkills] = useState([]);
@@ -31,13 +32,13 @@ function Resumes(){
           <div className="mi-skills">
             <div className="row mt-30-reverse">
               {skills.map(skill => (
-                // <TrackVisibility once className="col-lg-6 mt-30" key={skill.title}>
-                //   <Progress title={skill.title} percentage={skill.value} />
-                // </TrackVisibility>
-                <div className="col-lg-4 mt-30">
-                  {skill.title} - ({skill.years})
+                <TrackVisibility once className="col-lg-6 mt-30" key={skill.title}>
+                  <Progress title={skill.title} percentage={skill.value} />
+                </TrackVisibility>
+                // <div className="col-lg-4 mt-30">
+                //   {skill.title} - ({skill.years})
                   
-                </div>
+                // </div>
               ))}
             </div>
           </div>

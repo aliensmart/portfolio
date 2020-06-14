@@ -72,99 +72,128 @@ const database = {
   skills: [
     {
       title: "PYTHON",
-      years: "< 1 year"
+      years: "< 1 year",
+      value: 70
+    },
+    {
+      title: "Python Algorithms and Data Structures",
+      years: "< 1 year",
+      value: 55
     },
     {
       title: "Django",
-      years: "< 1 year"
+      years: "< 1 year",
+      value: 55
     },
     {
       title: "Numpy",
-      years: "< 1 year"
+      years: "< 1 year",
+      value: 70
     },
     {
       title: "Scikit-learn",
-      years: "< 1 year"
+      years: "< 1 year",
+      value: 20
     },
     {
       title: "Pandas",
-      years: "< 1 year"
+      years: "< 1 year",
+      value: 70
     },
     {
       title: "Matplotlib",
-      years: "< 1 year"
+      years: "< 1 year",
+      value: 70
     },
     {
       title: "Keras",
-      years: "< 1 year"
+      years: "< 1 year",
+      value: 15
     },
     {
       title: "Theano",
-      years: "< 1 year"
+      years: "< 1 year",
+      value: 15
     },
     {
       title: "FLASK",
-      years: "< 1 year"
+      years: "< 1 year",
+      value: 70
     },
     {
       title: "Machine Learning",
-      years: "< 1 year"
+      years: "< 1 year",
+      value: 70
     },
     {
       title: "CSS3",
-      years: "3 years"
+      years: "3 years",
+      value: 80
     },
     {
       title: "JAVASCRIPT",
-      years: "3 years"
+      years: "3 years",
+      value: 75
     },
     {
       title: "JQUERY",
-      years: "2 years"
+      years: "2 years",
+      value: 55
     },
     {
       title: "ReactJS",
-      years: "< 1 year"
+      years: "< 1 year",
+      value: 75
     },
     {
       title: "ADOBE PHOTOSHOP",
-      years: "3 years"
+      years: "3 years",
+      value: 85
     },
     {
       title: "ADOBE ILLUSTRATOR",
-      years: "3 years"
+      years: "3 years",
+      value: 65
     },
     {
       title: "ADOBE LIGHTROOM",
-      years: "3 years"
+      years: "3 years",
+      value: 90
     },
     {
       title: "HTML5",
-      years: "3 years"
+      years: "3 years",
+      value: 95
     },
     {
       title: "SQLITE3",
-      years: "< 1 year"
+      years: "< 1 year",
+      value: 70
     },
     {
       title: "MYSQL",
-      years: "1.5 year"
+      years: "1.5 year",
+      value: 50
     },
     {
       title: "PHP",
-      years: "1.5 year"
+      years: "1.5 year",
+      value: 55
     },
     {
       title: "WORDPRESS",
-      years: "2 years"
+      years: "2 years",
+      value: 85
     },
     {
       title: "SASS",
-      years: "2 years"
+      years: "2 years",
+      value: 90
     },
     {
       title: "BOOTSTRAP",
-      years: "< 1 year"
+      years: "< 1 year",
+      value: 85
     }
   ],
   portfolios: [
@@ -383,8 +412,16 @@ const database = {
   experience: {
     workingExperience: [
       {
+        id: 7,
+        year: "06/10/2020 - Present",
+        position: "Softwar Engineer (Remote - Intership)",
+        company: "Spryte",
+        details: "Intern at spryte as a fullstack software engineer, using Python, React.js, firebase. Peer Programmed with different developer and engineer.",
+        link:"https://www.sprytelabs.com/"
+      },
+      {
         id: 6,
-        year: "04/18/2020 - Present",
+        year: "04/18/2020 - 05/20/2020",
         position: "Softwar Engineer",
         company: "Personal Project",
         details: "A personal project that uses Oanda Rest API to make trades, This project is done using Python. I still work on making the bot better.",
