@@ -86,6 +86,11 @@ const database = {
       value: 55
     },
     {
+      title: "firebase",
+      years: "< 1 year",
+      value: 50
+    },
+    {
       title: "Numpy",
       years: "< 1 year",
       value: 70
@@ -416,7 +421,7 @@ const database = {
         year: "06/10/2020 - Present",
         position: "Softwar Engineer (Remote - Intership)",
         company: "Spryte",
-        details: "Intern at spryte as a fullstack software engineer, using Python, React.js, firebase. Peer Programmed with different developer and engineer.",
+        details: "Intern at spryte as a fullstack software engineer, using Python, React.js, firebase. Peer Programming remotly with multiple developers and engineers. Learning How to solve new challenges everyday, Working With Multiple React.js Component and Working with Firebase",
         link:"https://www.sprytelabs.com/"
       },
       {
@@ -548,7 +553,7 @@ const database = {
   ],
   contactInfo: {
     phoneNumbers: ['+1-929-217-6681'],
-    emailAddress: ['abdoul.engineer@gmail.com'],
+    emailAddress: ['kaoua121@gmail.com'],
     address: "1351 clay ave, Bronx, NY 10456"
   }
 }

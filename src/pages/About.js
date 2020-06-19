@@ -92,10 +92,6 @@ function About(){
                 Proficient in providing clean codes for any project I do.
                 I am willing to move around for my work, I am flexible for any work schedule.
                 </p>
-                <p className="color-theme">
-                    The more time You don't Hire me, The more skills I get and 
-                    the more money You have to spend on Hiring me in the future
-                </p>
                 <ul>
                   {!information.name ? null : <li>
                     <b>Full Name</b> {information.name}
