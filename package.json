@@ -2,7 +2,7 @@
   "name": "tf-react-chester",
   "version": "1.3.6",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "axios-mock-adapter": "^1.18.1",
     "bootstrap": "^4.5.0",
     "fslightbox-react": "^1.4.9",
